@@ -1,0 +1,356 @@
+/* 
+  Global
+*/
+:root {
+  --black-color: #000;
+  --sub-title-color: #A00404;
+  --img-size: 324px;
+  --main-theme-background-color: #415165;
+  --ul-border-color: #96A9C4;
+  --container-width: 1200px;
+  --horizontal-margin: 24px;
+  --header-color: #FFFFFF;
+  --banner-height: 960px;
+  --footer-color: #FFFFFF;
+  --footer-bg-color: #000000;
+  --brand-color: var(--footer-color);
+  --brand-bg-color: var(--footer-bg-color);
+  --ul-list-style-color: #891818;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--black-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/*
+  Utils
+*/
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.py-1 {
+  padding: 8px 0;
+}
+
+.py-2 {
+  padding: 16px 0;
+}
+
+.pl-3 {
+  padding-left: 24px;
+}
+
+.pl-4 {
+  padding-left: 32px;
+}
+
+.pb-4 {
+  padding-bottom: 32px;
+}
+
+.pt-8 {
+  padding-top: 64px;
+}
+
+.pb-20 {
+  padding-bottom: 160px;
+}
+
+.mb-1 {
+  margin-bottom: 8px;
+}
+
+.ml-2 {
+  margin-left: 16px;
+}
+
+.mt-2 {
+  margin-top: 16px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+.mb-3 {
+  margin-bottom: 24px;
+}
+
+.mb-4 {
+  margin-bottom: 32px;
+}
+
+.mb-5 {
+  margin-bottom: 40px;
+}
+
+.mb-6 {
+  margin-bottom: 48px;
+}
+
+.mb-7 {
+  margin-bottom: 56px;
+}
+
+.mb-8 {
+  margin-bottom: 64px;
+}
+
+/*
+  Layout
+  - prefix `.l` means layout
+*/
+.l-flex {
+  display: flex;
+}
+
+.l-flex-column {
+  flex-direction: column;
+}
+
+.l-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.l-flex-horizontal-center {
+  justify-content: center;
+}
+
+.l-flex-horizontal-between {
+  justify-content: space-between;
+}
+
+.l-flex-horizontal-between--evenly {
+  justify-content: space-evenly;
+}
+
+.l-flex-both-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+  Common
+*/
+.section {
+  font-size: 24px;
+}
+
+.section__title {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+}
+
+.container {
+  max-width: 1200px; /* 588x2+24 */
+  margin: 0 auto;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.header {
+  color: var( --header-color);
+}
+
+.header .wrapper {
+  height: 100%;
+}
+
+.header.bg-img {
+  height: var(--banner-height);
+  background-image: url('https://hexschool.github.io/webLayoutTraining1st/week2/banner.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.my__title {
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 94px;
+  text-align: left;
+}
+
+.my__title__prefix {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.my__job-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.my__social-media__list__item {
+  display: inline-block;
+}
+
+.my__about {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.intro__school {
+  line-height: 36px;
+}
+
+.my__work-experience__list {
+  display: inline-block;
+  border-top: 1px solid #000000;
+  padding: 32px 21px 0 21px;
+}
+
+.my__work-experience__list__item::before {
+  content: '';
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin-right: 16px;
+  background-color: var(--ul-list-style-color);
+  display: inline-block;
+}
+
+.my__brand {
+  color: var(--brand-color);
+  background-color: var(--brand-bg-color);
+}
+
+.brand__slogan {
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.brand__description {
+  margin-bottom: 68px;
+}
+
+.brand__description,
+.portfolio__description {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.portfolio__title {
+  font-size: 20px;
+  line-height: 42px;
+}
+
+.footer {
+  /* font-weight: 500; */
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--footer-color);
+  background-color: var(--footer-bg-color);
+}
+
+.my__contact {
+  padding: 64px 0 80px;
+}
+
+.social-media__link,
+.contact__link {
+  transition: transform .2s linear;
+}
+
+.contact__link::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: yellowgreen;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  transition: all .2s linear;
+}
+
+.social-media__link:hover,
+.contact__link:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.contact__link:hover::after {
+  width: 100%;
+}
+
+
+
+/*
+  unusage
+*/
+.l-flex-auto {
+  flex: 1 1 auto;
+}
+
+.l-flex-10 {
+  flex: 1 1 10%;
+}
+
+.l-flex-20 {
+  flex: 1 1 20%;
+}
+
+.l-flex-30 {
+  flex: 1 1 30%;
+}
+
+.l-flex-32 {
+  flex: 1 1 32%;
+}
+
+.l-flex-40 {
+  flex: 1 1 40%;
+}
+
+.l-flex-49 {
+  flex: 1 1 49%;
+}
+
+.l-flex-66 {
+  flex: 1 1 66%;
+}
+
+.l-flex-1 {
+  flex: 1 1 100%;
+}
+
+.l-flex-2 {
+  /* flex: 1 1 50%; */
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc((var(--container-width) - var(--horizontal-margin)) / 2 );
+}
+
+.l-flex-3 {
+  /* flex: 1 1 33.33%; */
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc((var(--container-width) - (var(--horizontal-margin) * 2)) / 3 );
+}
