@@ -5,24 +5,38 @@
   --black-color: #000;
   --sub-title-color: #A00404;
   --img-size: 324px;
-  --main-theme-background-color: #415165;
   --ul-border-color: #96A9C4;
   --container-width: 1200px;
   --horizontal-margin: 24px;
-  --header-color: #FFFFFF;
   --banner-height: 960px;
   --footer-color: #FFFFFF;
   --footer-bg-color: #000000;
   --brand-color: var(--footer-color);
   --brand-bg-color: var(--footer-bg-color);
   --ul-list-style-color: #891818;
+
+  --main-theme-color: #AA0601;
+  --secondary-theme-color: #650300;
+  --header-color: #FFFFFF;
+  --header-bg-color: var(--main-theme-color);
+  --footer-color: #FFFFFF;
+  --footer-bg-color: var(--main-theme-color);
+  --banner-height: 840px;
+  --card-border-color: #DEE2E6;
+  --light-red-bg-color: #AA06010D;
+}
+
+/* 全域 border box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
-  font-weight: 500;
-  color: var(--black-color);
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  /* color: var(--black-color); */
 }
 
 a {
@@ -32,30 +46,145 @@ a {
 }
 
 img {
+  max-width: 100%;
+  height: auto;
   vertical-align: middle;
 }
+
+input,
+textarea {
+  background: transparent;
+  border: none;
+}
+
+textarea {
+  resize: none;
+}
+
+/*
+  Base
+*/
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  color: #FFFFFF;
+  background-color: var(--main-theme-color);
+  transition: all .3s linear;
+}
+
+.btn--primary:hover {
+  background-color: var(--secondary-theme-color);
+}
+
+.link {
+  transition: all .3s linear;
+}
+
+.link::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #FFFFFF;
+  position: relative;
+  bottom: 0;
+  display: block;
+  transition: all .3s linear;
+}
+
+.link:hover::after {
+  width: 100%;
+} 
+
+
+/*
+ Object
+  - prefix `.o` means base objects styles blocks
+*/
+
+.card {
+  /* border: 1px solid var(--card-border-color); */
+}
+
+.card__body {
+  border: 1px solid var(--card-border-color);
+}
+
+.form__item input,
+.form__item textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #000000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.form__item input[type="radio"],
+.form__item input[type="checkbox"] {
+  width: auto;
+}
+
 
 /*
   Utils
 */
-.fw-500 {
+
+/* font size */
+.fw-reg {
+  font-weight: 400;
+}
+
+.fw-md {
   font-weight: 500;
 }
 
-.fw-700 {
+.fw-bd {
   font-weight: 700;
 }
 
-.fw-900 {
+.fw-bk {
   font-weight: 900;
 }
 
+
+/* padding */ 
 .py-1 {
   padding: 8px 0;
 }
 
+.px-2 {
+  padding: 0 16px;
+}
+
 .py-2 {
   padding: 16px 0;
+}
+
+.pl-2 {
+  padding-left: 16px;
+}
+
+.px-3 {
+  padding: 0 24px;
+}
+
+.py-8 {
+  padding: 64px 0;
 }
 
 .pl-3 {
@@ -74,12 +203,17 @@ img {
   padding-top: 64px;
 }
 
-.pb-20 {
-  padding-bottom: 160px;
+.pb-10 {
+  padding-bottom: 80px;
 }
 
+/* margin */ 
 .mb-1 {
   margin-bottom: 8px;
+}
+
+.mr-1 {
+  margin-right: 8px;
 }
 
 .ml-2 {
@@ -130,174 +264,33 @@ img {
   flex-direction: column;
 }
 
+.l-flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .l-flex-wrap {
   flex-wrap: wrap;
 }
 
-.l-flex-horizontal-center {
+.l-flex-horizontal--center {
   justify-content: center;
 }
 
-.l-flex-horizontal-between {
-  justify-content: space-between;
+.l-flex-horizontal--end {
+  justify-content: flex-end;
 }
 
-.l-flex-horizontal-between--evenly {
-  justify-content: space-evenly;
-}
-
-.l-flex-both-center {
-  justify-content: center;
+.l-flex-vertical--center {
   align-items: center;
 }
 
-/* 
-  Common
-*/
-.section {
-  font-size: 24px;
+.l-flex-horizontal--between {
+  justify-content: space-between;
 }
 
-.section__title {
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 75px;
-}
-
-.container {
-  max-width: 1200px; /* 588x2+24 */
-  margin: 0 auto;
-}
-
-.text--center {
-  text-align: center;
-}
-
-.header {
-  color: var( --header-color);
-}
-
-.header .wrapper {
-  height: 100%;
-}
-
-.header.bg-img {
-  height: var(--banner-height);
-  background-image: url('https://hexschool.github.io/webLayoutTraining1st/week2/banner.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.my__title {
-  font-weight: 900;
-  font-size: 80px;
-  line-height: 94px;
-  text-align: left;
-}
-
-.my__title__prefix {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 42px;
-}
-
-.my__job-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-}
-
-.my__social-media__list__item {
-  display: inline-block;
-}
-
-.my__about {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 42px;
-}
-
-.intro__school {
-  line-height: 36px;
-}
-
-.my__work-experience__list {
-  display: inline-block;
-  border-top: 1px solid #000000;
-  padding: 32px 21px 0 21px;
-}
-
-.my__work-experience__list__item::before {
-  content: '';
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  margin-right: 16px;
-  background-color: var(--ul-list-style-color);
-  display: inline-block;
-}
-
-.my__brand {
-  color: var(--brand-color);
-  background-color: var(--brand-bg-color);
-}
-
-.brand__slogan {
-  font-size: 24px;
-  line-height: 42px;
-}
-
-.brand__description {
-  margin-bottom: 68px;
-}
-
-.brand__description,
-.portfolio__description {
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.portfolio__title {
-  font-size: 20px;
-  line-height: 42px;
-}
-
-.footer {
-  /* font-weight: 500; */
-  font-size: 24px;
-  line-height: 36px;
-  color: var(--footer-color);
-  background-color: var(--footer-bg-color);
-}
-
-.my__contact {
-  padding: 64px 0 80px;
-}
-
-.social-media__link,
-.contact__link {
-  transition: transform .2s linear;
-}
-
-.contact__link::after {
-  content: '';
-  width: 0;
-  height: 3px;
-  background: yellowgreen;
-  position: absolute;
-  bottom: 0;
-  display: block;
-  transition: all .2s linear;
-}
-
-.social-media__link:hover,
-.contact__link:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.contact__link:hover::after {
-  width: 100%;
+.l-flex-both--center {
+  justify-content: center;
+  align-items: center;
 }
 
 

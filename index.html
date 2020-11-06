@@ -3,127 +3,256 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website | Week 2</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>RWD | Week 3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
-  <header class="header bg-img mb-8">
-    <div class="wrapper l-flex l-flex-column l-flex-both-center">
-      <div class="container">
-      
-          <h1 class="my__title mb-4">
-            <span class="my__title__prefix">Here’s</span>
-            <br>
-            JOANNE
-          </h1>
-          <h4 class="my__job-title mb-6">
-            Founder of “XXXD Official’’
-            <br>
-            & Graphic Designer
-          </h4>
-          <ul class="my__social-media__list l-flex l-flex-horizontal-between">
-            <li class="my__social-media__list__item"><a href="#" class="social-media__link"><img src="https://hexschool.github.io/webLayoutTraining1st/week2/facebook.svg" alt="Facebook icon"></a></li>
-            <li class="my__social-media__list__item"><a href="#" class="social-media__link"><img src="https://hexschool.github.io/webLayoutTraining1st/week2/instagram.svg" alt="Instagram icon"></a></li>
-            <li class="my__social-media__list__item"><a href="#" class="social-media__link"><img src="https://hexschool.github.io/webLayoutTraining1st/week2/youtube.svg" alt="YouTube icon"></a></li>
-            <li class="my__social-media__list__item"><a href="#" class="social-media__link"><img src="https://hexschool.github.io/webLayoutTraining1st/week2/behance.svg" alt="Behance icon"></a></li>
-          </ul>
-        </div>
-      </div>
+  <header class="header fw-reg l-flex l-flex-horizontal--between l-flex-vertical--center">
+    <a href="index.html" class="logo__wrapper">
+      <img class="logo__img "src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo">
+    </a>
+    <nav class="nav__menu">
+      <ul class="menu__list l-flex l-flex-horizontal--between">
+        <li class="menu__item"><a href="product.html" class="menu__link">系列鏡框</a></li>
+        <li class="menu__item"><a href="store.html" class="menu__link">門市據點</a></li>
+        <li class="menu__item"><a href="blog.html" class="menu__link">部落格</a></li>
+        <li class="menu__item"><a href="faq.html" class="menu__link">常見問題</a></li>
+      </ul>
+    </nav>
   </header>
-  <main class="main">
-    <section class="section my__about mb-7">
-      <div class="container text--center">
-        <h2 class="section__title mb-5">About</h2>
-        <div class="about__photo__wrapper mb-3"><img src="https://hexschool.github.io/webLayoutTraining1st/week2/photo.png" alt="JOANNE photo" class="about__photo__img"></div>
-        <ul class="my__intro__list mb-3">
-          <li class="my__intro__list__item intro__name">Joanne Chen</li>
-          <li class="my__intro__list__item intro__birth">1997/10/10</li>
-          <li class="my__intro__list__item intro__school">
-            National Hex School Normal University
-            <br>
-            Department of Visual Design</li>
+  <main>
+    <section class="section banner l-flex l-flex-vertical--center">
+      <div class="container text-right">
+        <h1 class="banner__title fw-bd">
+          <span class="banner__subTitle fw-reg">Promise-Desert 2020 早春系列</span>
+          <br>
+          看得清，才能看得遠
+        </h1>
+      </div>
+    </section>
+    <section class="section service pt-8 pb-10">
+      <div class="container text-center">
+        <h2 class="section__title fw-bd">用專業的心，做專業的事</h2>
+        <ul class="service__list l-flex l-flex-horizontal--between">
+          <li class="service__item l-flex l-flex-column l-flex-vertical--center">
+            <div class="image__wrapper mb-5">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-dollar.svg" alt="dollar icon">
+            </div>
+            <h4 class="fw-bd">單一價格</h4>
+            <p class="text-left">無論任何度數皆不需追加費用 即可擁有適合自己的薄型球面 鏡片。</p>
+          </li>
+          <li class="service__item l-flex l-flex-column l-flex-vertical--center">
+            <div class="image__wrapper mb-5">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-clock.svg" alt="clock icon">
+            </div>
+            <h4 class="fw-bd">20 分鐘即可取件</h4>
+            <p class="text-left">為了您的寶貴時間著想，以豐 富專業知識與技術將結帳到交 件的時間縮減至最快 20 分鐘 即可完成。</p>
+          </li>
+          <li class="service__item l-flex l-flex-column l-flex-vertical--center">
+            <div class="image__wrapper mb-5">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-heart.svg" alt="heart icon">
+            </div>
+            <h4 class="fw-bd">安心售後服務</h4>
+            <p class="text-left">我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+          </li>
+          <li class="service__item l-flex l-flex-column l-flex-vertical--center">
+            <div class="image__wrapper mb-5">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-glasses.svg" alt="glasses icon">
+            </div>
+            <h4 class="fw-bd">關於鏡片</h4>
+            <p class="text-left">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+          </li>
         </ul>
-        <ul class="my__work-experience__list pb-4">
-          <li class="my__work-experience__list__item mb-4">Founder of ‘’XXXD Official’’</li>
-          <li class="my__work-experience__list__item mb-4">Graphic Designer</li>
-          <li class="my__work-experience__list__item mb-4">Graphic Intern of Hex School</li>
+      </div>
+    </section>
+    <section class="section classic pt-8 pb-10">
+      <div class="container text-center">
+        <h2 class="section__title fw-bd">經典系列鏡框</h2>
+        <ul class="classic__list">
+          <li class="classic__item l-flex l-flex-vertical--center pb-4">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/product-1.png" alt="product 1">
+            </div>
+            <div class="classic__category l-flex l-flex-vertical--center">
+              <span class="classic__icon mr-1">
+                <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-diamond.svg" alt="diamond icon">
+              </span>
+              <h3>optical</h3>
+            </div>
+          </li>
+          <li class="classic__item l-flex l-flex-row-reverse l-flex-vertical--center pb-4">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/product-2.png" alt="product 2">
+            </div>
+            <div class="classic__category l-flex l-flex-vertical--center">
+              <span class="classic__icon mr-1">
+                <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-sun.svg" alt="sun icon">
+              </span>
+              <h3>sunglasses</h3>
+            </div>
+          </li>
+          <li class="classic__item l-flex l-flex-vertical--center pb-4">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/product-3.png" alt="product 3">
+            </div>
+            <div class="classic__category l-flex l-flex-vertical--center">
+              <span class="classic__icon mr-1">
+                <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-thunder.svg" alt="thunder icon">
+              </span>
+              <h3>functional</h3>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
-    <section class="section my__brand pt-8 pb-20">
-      <div class="container text--center">
-        <h2 class="section__title mb-2">My Brand ‘’XXXD’’</h2>
-        <h3 class="brand__slogan mb-4">Just Keep XXXD Everyday</h3>
-        <p class="brand__description">
-          2020 年創立的個人服飾品牌
-          <br>
-          引領叛逆少年開啟與社會對話的窗口
-          <br>
-          主打概念潮流T-Shirt
-        </p>
-        <div class="brand__image__container l-flex l-flex-wrap l-flex-horizontal-between--evenly">
-          <div class="brand__image__wrapper mb-5"><img src="https://hexschool.github.io/webLayoutTraining1st/week2/brand_img1.png" alt="brand img 01" class="brand__image"></div>
-          <div class="brand__image__wrapper mb-5"><img src="https://hexschool.github.io/webLayoutTraining1st/week2/brand_img2.png" alt="brand img 02" class="brand__image"></div>
-          <div class="brand__image__wrapper mb-5"><img src="https://hexschool.github.io/webLayoutTraining1st/week2/brand_img3.png" alt="brand img 03" class="brand__image"></div>
+    <section class="section crossover pt-8 pb-10">
+      <div class="container text-center">
+        <h2 class="section__title fw-bd">聯名設計鏡框</h2>
+        <ul class="crossover__list l-flex l-flex-horizontal--between">
+          <li class="crossover__item l-flex l-flex-both--center">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/product-8.png" alt="crossover DoubleA+">
+            </div>
+            <span class="crossover__title fw-bd">Double A+</span>
+          </li>
+          <li class="crossover__item l-flex l-flex-both--center">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/product-9.png" alt="crossover YOUTH">
+            </div>
+            <span class="crossover__title fw-bd">YOUTH</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section recommend py-8">
+      <div class="container text-center">
+        <h2 class="section__title fw-bd">顧客推薦</h2>
+        <ul class="recommend__list l-flex l-flex-horizontal--between">
+          <li class="recommend__item card text-left">
+            <img src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-1.png" alt="Jessy recommend">
+            <div class="card__body">
+              <h5 class="fw-md">Jessy</h5>
+              <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <span>Last updated 3 mins ago</span>
+            </div>
+          </li>
+          <li class="recommend__item o-card text-left">
+            <img src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-2.png" alt="Karen recommend">
+            <div class="card__body">
+              <h5 class="fw-md">Karen</h5>
+              <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <span>Last updated 3 mins ago</span>
+            </div>
+          </li>
+          <li class="recommend__item o-card text-left">
+            <img src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-3.png" alt="Chelsea recommend">
+            <div class="card__body">
+              <h5 class="fw-md">Chelsea</h5>
+              <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <span>Last updated 3 mins ago</span>
+            </div>
+          </li>
+          <li class="recommend__item o-card text-left">
+            <img src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-4.png" alt="Jane recommend">
+            <div class="card__body">
+              <h5 class="fw-md">Jane</h5>
+              <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <span>Last updated 3 mins ago</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section contact pt-8 pb-10">
+      <div class="container text-center">
+        <h2 class="section__title fw-bd mb-3">聯絡我們</h2>
+        <div class="form__wrapper text-left">
+          <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+          <form id="contactForm" class="form">
+            <div class="form__item mb-2">
+              <label for="name">姓名</label>
+              <input type="text" id="name" name="name" placeholder="陳小明">
+            </div>
+            <div class="form__item mb-2">
+              <label for="phone">聯絡電話</label>
+              <input type="tel" id="phone" name="phone" placeholder="0912-345-678">
+            </div>
+            <div class="form__item mb-2">
+              <label for="email">電子郵件</label>
+              <input type="text" id="email" name="email" placeholder="example@email.com">
+            </div>
+            <div class="form__item mb-2">
+              <label for="suggestion">意見反應</label>
+              <textarea id="suggestion" name="suggestion" rows="5" cols="30" placeholder="請輸入您的意見"></textarea>
+            </div>
+            <div class="form__item mb-2" data-field="suggestion">
+              <label for="suggestion">
+                <input type="checkbox" id="suggestion" name="suggestion">
+                我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+              </label>
+            </div>
+            <div class="form__groupBtn text-center">
+              <input type="submit" name="submit" class="btn btn--primary" value="確認送出">
+            </div>
+          </form>
         </div>
       </div>
     </section>
-    <section class="section my__portfolio pt-8 pb-20">
-      <div class="container text--center">
-        <h2 class="section__title mb-3">Other Works</h2>
-        <p class="portfolio__description mb-7">
-          2016-2020 年累積的作品
-          <br>
-          海報/廣告/攝影/LOGO/3D
-        </p>
-        <div class="portfolio__images__container l-flex l-flex-wrap l-flex-horizontal-center l-flex-horizontal-between">
-          <div class="portfolio__image__wrapper l-flex l-flex-column mb-7">
-            <img src="https://hexschool.github.io/webLayoutTraining1st/week2/work_img1.png" alt="poster image" class="portfolio__image">
-            <span class="portfolio__title mt-2">海報設計/2017</span>
-          </div>
-          <div class="portfolio__image__wrapper l-flex l-flex-column mb-7">
-            <img src="https://hexschool.github.io/webLayoutTraining1st/week2/work_img2.png" alt="poster image" class="portfolio__image">
-            <span class="portfolio__title mt-2">海報設計/2018</span>
-          </div>
-          <div class="portfolio__image__wrapper l-flex l-flex-column mb-7">
-            <img src="https://hexschool.github.io/webLayoutTraining1st/week2/work_img3.png" alt="poster image" class="portfolio__image">
-            <span class="portfolio__title mt-2">海報設計/2018</span>
-          </div>
-          <div class="portfolio__image__wrapper l-flex l-flex-column mb-7">
-            <img src="https://hexschool.github.io/webLayoutTraining1st/week2/work_img4.png" alt="photography image" class="portfolio__image">
-            <span class="portfolio__title mt-2">概念攝影/2018</span>
-          </div>
-          <div class="portfolio__image__wrapper l-flex l-flex-column mb-7">
-            <img src="https://hexschool.github.io/webLayoutTraining1st/week2/work_img5.png" alt="photography image" class="portfolio__image">
-            <span class="portfolio__title mt-2">概念攝影/2018</span>
-          </div>
-          <div class="portfolio__image__wrapper l-flex l-flex-column mb-7">
-            <img src="https://hexschool.github.io/webLayoutTraining1st/week2/work_img6.png" alt="logo image" class="portfolio__image">
-            <span class="portfolio__title mt-2">sasa 酒標設計/2019</span>
-          </div>
-          <div class="portfolio__image__wrapper l-flex l-flex-column mb-7">
-            <img src="https://hexschool.github.io/webLayoutTraining1st/week2/work_img7.png" alt="photography creative image" class="portfolio__image">
-            <span class="portfolio__title mt-2">攝影創作/2018</span>
-          </div>
-          <div class="portfolio__image__wrapper l-flex l-flex-column mb-7">
-            <img src="https://hexschool.github.io/webLayoutTraining1st/week2/work_img8.png" alt="official website design image" class="portfolio__image">
-            <span class="portfolio__title mt-2">官網設計/2020</span>
-          </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <nav class="nav l-flex l-flex-wrap l-flex-horizontal--between l-flex-vertical--center">
+        <ul class="menu__list l-flex l-flex-horizontal--between">
+          <li class="menu__item"><a href="index.html" class="link menu__link">首頁</a></li>
+          <li class="menu__item"><a href="product.html" class="link menu__link">系列鏡框</a></li>
+          <li class="menu__item"><a href="store.html" class="link menu__link">門市據點</a></li>
+          <li class="menu__item"><a href="blog.html" class="link menu__link">部落格</a></li>
+          <li class="menu__item"><a href="fqa.html" class="link menu__link">常見問題</a></li>
+        </ul>
+        <ul class="socialMedia__list l-flex l-flex-horizontal--between">
+          <li class="socialMedia__item px-2">
+            <a href="#" class="socialMedia__link">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg" alt="facebook icon">
+            </a>
+          </li>
+          <li class="socialMedia__item px-2">
+            <a href="#" class="socialMedia__link">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg" alt="instagram icon">
+            </a>
+          </li>
+          <li class="socialMedia__item pl-2">
+            <a href="#" class="socialMedia__link">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg" alt="line icon">
+            </a>
+          </li>
+        </ul>
+        <ul class="contactMethod__list">
+          <li class="contactMethod__tel contactMethod__item">
+            <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone.svg" alt="phone icon" class="icon">
+            <a href="tel:+0800-000-000" class="link contactMethod__link">0800-000-000</a>
+          </li>
+          <li class="contactMethod__mail contactMethod__item">
+            <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-mail.svg" alt="mail icon" class="icon">
+            <a href="mailto:" class="link contactMethod__link">glasses@business.com</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright__wrapper l-flex l-flex-horizontal--between l-flex-vertical--center">
+        <div class="copyright">
+          <a href="index.html" class="logo__wrapper">
+            <img class="logo__img" src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo">
+          </a>
+          <p>Copyright © 2020 Glasses.All rights reserved.</p>
         </div>
+        <ul class="legal__list">
+          <li class="legal__item"><a href="#" class="link legal__link">隱私權政策</a></li>
+          <li class="legal__item"><a href="#" class="link legal__link">服務條款</a></li>
+        </ul>
       </div>
-    </section>
-    <footer class="footer">
-      <div class="my__contact">
-        <div class="container text--center">
-          <h2 class="section__title mb-2">Contact</h2>
-          <ul class="contact__list">
-            <li class="contact__list__item mb-2"><a href="mailto:xxxd@hexschool.com" class="contact__link">Mail：xxxd@hexschool.com</a></li>
-            <li class="contact__list__item"><a href="tel:0910123456" class="contact__link">Phone Number：0910123456</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 </body>
 </html>
