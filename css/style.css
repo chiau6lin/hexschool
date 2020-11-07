@@ -109,7 +109,12 @@ textarea {
 
 .link:hover::after {
   width: 100%;
-} 
+}
+
+.image__wrapper img {
+  width: 100%;
+  height: 100%;
+}
 
 
 /*
@@ -139,6 +144,14 @@ textarea {
   width: auto;
 }
 
+@media (max-width: 992px) {
+  .form__item input,
+  .form__item textarea {
+    padding: 8px 12px;
+    border: 1px solid #000000;
+    font-size: 14px;
+  }
+}
 
 /*
   Utils
@@ -256,6 +269,8 @@ textarea {
   Layout
   - prefix `.l` means layout
 */
+
+/* FlexBox */
 .l-flex {
   display: flex;
 }
@@ -293,6 +308,14 @@ textarea {
   align-items: center;
 }
 
+/* Block */
+.l-block {
+  display: block;
+}
+
+.l-inline-block {
+  display: inline-block;
+}
 
 
 /*
@@ -346,4 +369,233 @@ textarea {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: calc((var(--container-width) - (var(--horizontal-margin) * 2)) / 3 );
+}
+
+
+.header {
+  /* font-family: 'Noto Sans', sans-serif; */
+  font-size: 28px;
+  color: var(--header-color);
+  background-color: var(--header-bg-color);
+  padding: 30px 88px;
+}
+
+.menu__item {
+  padding: 10px 32px;
+}
+
+.menu__link {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.footer {
+  color: var(--footer-color);
+  background-color: var(--footer-bg-color);
+  padding-top: 36px;
+}
+
+.footer nav {
+  border-bottom: 1px solid #FFFFFF;
+  padding-bottom: 20px;
+}
+
+.footer .menu__item {
+  padding: 0 24px;
+}
+
+.footer .menu__item:first-child {
+  padding-left: 0;
+}
+
+.footer .menu__item:last-child {
+  padding-right: 0;
+}
+
+.footer .menu__link {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.socialMedia__link {
+  transition: all .3s linear;
+}
+
+.socialMedia__link:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.copyright__wrapper {
+  padding: 24px 0 28px;
+}
+
+.copyright .logo__img {
+  margin-right: 38px;
+}
+
+.copyright p {
+  font-family: 'Roboto', sans-serif;
+  /* line-height: 1.5; */
+}
+
+.contactMethod__list {
+  margin-top: 18px;
+}
+
+.contactMethod__tel {
+  margin-bottom: 17px;
+}
+
+.contactMethod__link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+.contactMethod__tel .icon {
+  margin-right: 17px;
+}
+
+.contactMethod__tel .contactMethod__link::before {
+  content: '';
+  background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  margin-right: 17px;
+  vertical-align: middle;
+}
+
+.contactMethod__mail .contactMethod__link::before {
+  content: '';
+  background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/icon-mail.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  margin-right: 17px;
+  vertical-align: middle;
+}
+
+.contactMethod__tel .icon:hover {
+  animation: ring .3s linear 3 alternate;
+}
+
+.contactMethod__tel .contactMethod__link:hover::before {
+  animation: ring .3s linear 3 alternate;
+}
+
+.contactMethod__mail .contactMethod__link:hover::before {
+  content: '\27A4';
+  font-size: 48px;
+  background-position: -48px;
+  position: relative;
+  top: -10px;
+  animation: fly .3s linear 3 alternate;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes fly {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 2%;
+  }
+}
+
+.contactMethod__mail .icon {
+  margin-right: 6px;
+}
+
+.legal__item {
+  display: inline-block;
+}
+
+.legal__item:not(:last-child) {
+  margin-right: 62px;
+}
+
+.legal__link {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  .menu__item {
+    padding: 10px 20px;
+  }
+
+  .footer .menu__item {
+    padding: 0 20px;
+  }
+
+  .footer .logo__img {
+    display: none;
+  }
+
+  .socialMedia__link {
+    width: 24px;
+  }
+
+  .socialMedia__item {
+    padding: 0 12px;
+  }
+
+  .legal__item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  .contactMethod__list {
+    margin-top: 24px;
+  }
+
+  .contactMethod__item .icon {
+    margin-right: 10px;
+  }
+
+  .contactMethod__item img {
+    width: 24px;
+  }
+
+  .contactMethod__tel .contactMethod__link::before,
+  .contactMethod__mail .contactMethod__link::before {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+  }
+
+  .contactMethod__mail .contactMethod__link:hover::before {
+    font-size: 24px;
+    top: -7px;
+  }
+
+  .contactMethod__link {
+    font-size: 20px;
+  }
 }

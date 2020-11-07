@@ -16,14 +16,14 @@
     </a>
     <nav class="nav__menu">
       <ul class="menu__list l-flex l-flex-horizontal--between">
-        <li class="menu__item"><a href="product.html" class="menu__link">系列鏡框</a></li>
-        <li class="menu__item"><a href="store.html" class="menu__link">門市據點</a></li>
-        <li class="menu__item"><a href="blog.html" class="menu__link">部落格</a></li>
-        <li class="menu__item"><a href="faq.html" class="menu__link">常見問題</a></li>
+        <li class="menu__item"><a href="product.html" class="link menu__link">系列鏡框</a></li>
+        <li class="menu__item"><a href="store.html" class="link menu__link">門市據點</a></li>
+        <li class="menu__item"><a href="blog.html" class="link menu__link">部落格</a></li>
+        <li class="menu__item"><a href="faq.html" class="link menu__link">常見問題</a></li>
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="main">
     <section class="section banner l-flex l-flex-vertical--center">
       <div class="container text-right">
         <h1 class="banner__title fw-bd">
@@ -33,32 +33,32 @@
         </h1>
       </div>
     </section>
-    <section class="section service pt-8 pb-10">
+    <section class="section about pt-8 pb-10">
       <div class="container text-center">
         <h2 class="section__title fw-bd">用專業的心，做專業的事</h2>
-        <ul class="service__list l-flex l-flex-horizontal--between">
-          <li class="service__item l-flex l-flex-column l-flex-vertical--center">
+        <ul class="about__list l-flex l-flex-wrap l-flex-horizontal--between">
+          <li class="about__price about__item l-flex l-flex-column l-flex-vertical--center">
             <div class="image__wrapper mb-5">
               <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-dollar.svg" alt="dollar icon">
             </div>
             <h4 class="fw-bd">單一價格</h4>
             <p class="text-left">無論任何度數皆不需追加費用 即可擁有適合自己的薄型球面 鏡片。</p>
           </li>
-          <li class="service__item l-flex l-flex-column l-flex-vertical--center">
+          <li class="about__rapid about__item l-flex l-flex-column l-flex-vertical--center">
             <div class="image__wrapper mb-5">
               <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-clock.svg" alt="clock icon">
             </div>
             <h4 class="fw-bd">20 分鐘即可取件</h4>
             <p class="text-left">為了您的寶貴時間著想，以豐 富專業知識與技術將結帳到交 件的時間縮減至最快 20 分鐘 即可完成。</p>
           </li>
-          <li class="service__item l-flex l-flex-column l-flex-vertical--center">
+          <li class="about__afterSales about__item l-flex l-flex-column l-flex-vertical--center">
             <div class="image__wrapper mb-5">
               <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-heart.svg" alt="heart icon">
             </div>
             <h4 class="fw-bd">安心售後服務</h4>
             <p class="text-left">我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
           </li>
-          <li class="service__item l-flex l-flex-column l-flex-vertical--center">
+          <li class="about__lens about__item l-flex l-flex-column l-flex-vertical--center">
             <div class="image__wrapper mb-5">
               <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-glasses.svg" alt="glasses icon">
             </div>
@@ -130,7 +130,7 @@
     <section class="section recommend py-8">
       <div class="container text-center">
         <h2 class="section__title fw-bd">顧客推薦</h2>
-        <ul class="recommend__list l-flex l-flex-horizontal--between">
+        <ul class="recommend__list l-flex l-flex-wrap l-flex-horizontal--between">
           <li class="recommend__item card text-left">
             <img src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-1.png" alt="Jessy recommend">
             <div class="card__body">
@@ -173,24 +173,24 @@
           <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
           <form id="contactForm" class="form">
             <div class="form__item mb-2">
-              <label for="name">姓名</label>
+              <label for="name" class="l-block">姓名</label>
               <input type="text" id="name" name="name" placeholder="陳小明">
             </div>
             <div class="form__item mb-2">
-              <label for="phone">聯絡電話</label>
+              <label for="phone" class="l-block">聯絡電話</label>
               <input type="tel" id="phone" name="phone" placeholder="0912-345-678">
             </div>
             <div class="form__item mb-2">
-              <label for="email">電子郵件</label>
+              <label for="email" class="l-block">電子郵件</label>
               <input type="text" id="email" name="email" placeholder="example@email.com">
             </div>
             <div class="form__item mb-2">
-              <label for="suggestion">意見反應</label>
+              <label for="suggestion" class="l-block">意見反應</label>
               <textarea id="suggestion" name="suggestion" rows="5" cols="30" placeholder="請輸入您的意見"></textarea>
             </div>
-            <div class="form__item mb-2" data-field="suggestion">
-              <label for="suggestion">
-                <input type="checkbox" id="suggestion" name="suggestion">
+            <div class="form__item mb-2" data-field="agreement">
+              <label for="agreement" class="l-flex">
+                <input type="checkbox" id="agreement" name="agreement">
                 我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
               </label>
             </div>
@@ -231,12 +231,12 @@
         </ul>
         <ul class="contactMethod__list">
           <li class="contactMethod__tel contactMethod__item">
-            <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone.svg" alt="phone icon" class="icon">
-            <a href="tel:+0800-000-000" class="link contactMethod__link">0800-000-000</a>
+            <!-- <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone.svg" alt="phone icon" class="icon"> -->
+            <a href="tel:+0800-000-000" class="contactMethod__link">0800-000-000</a>
           </li>
           <li class="contactMethod__mail contactMethod__item">
-            <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-mail.svg" alt="mail icon" class="icon">
-            <a href="mailto:" class="link contactMethod__link">glasses@business.com</a>
+            <!-- <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-mail.svg" alt="mail icon" class="icon"> -->
+            <a href="mailto:" class="contactMethod__link">glasses@business.com</a>
           </li>
         </ul>
       </nav>
@@ -245,7 +245,7 @@
           <a href="index.html" class="logo__wrapper">
             <img class="logo__img" src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo">
           </a>
-          <p>Copyright © 2020 Glasses.All rights reserved.</p>
+          <p class="l-inline-block">Copyright © 2020 Glasses.All rights reserved.</p>
         </div>
         <ul class="legal__list">
           <li class="legal__item"><a href="#" class="link legal__link">隱私權政策</a></li>
