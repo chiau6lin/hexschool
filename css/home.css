@@ -11,12 +11,6 @@
   color: var(--secondary-theme-color);
 }
 
-.container {
-  max-width: 1110px; /* 12x65+11x30 */
-  width: 100%;
-  margin: 0 auto;
-}
-
 /* 
   Page
 */
@@ -207,10 +201,6 @@
 */
 
 @media (max-width: 768px) {
-  .container {
-    max-width: 690px; /* 12x30+11x30 */
-  }
-
   .section__title {
     font-size: 32px;
   }
@@ -341,10 +331,6 @@
 }
 
 @media (max-width: 375px) {
-  .container {
-    max-width: 345px; /* 4x75+3x15 */
-  }
-
   .section__title {
     font-size: 24px;
     line-height: 2;

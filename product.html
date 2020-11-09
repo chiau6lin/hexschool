@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RWD | Week 3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/product.css">
+</head>
+<body>
+  <header class="header fw-reg l-flex l-flex-horizontal--between l-flex-vertical--center">
+    <a href="index.html" class="logo__wrapper">
+      <img class="logo__img "src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo">
+    </a>
+    <nav class="nav__menu">
+      <ul class="menu__list l-flex l-flex-horizontal--between">
+        <li class="menu__item"><a href="product.html#optical" class="link menu__link">系列鏡框</a></li>
+        <li class="menu__item"><a href="store.html" class="link menu__link">門市據點</a></li>
+        <li class="menu__item"><a href="blog.html" class="link menu__link">部落格</a></li>
+        <li class="menu__item"><a href="faq.html" class="link menu__link">常見問題</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main product__page">
+    <div class="tabs text-center">
+      <ul class="tab__list">
+        <li class="tab__item tab__item--optical l-inline-block py-3 tab--active" data-tab="optical">
+          <a href="#optical" class="tab__link">
+            <span>
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-diamond-black.svg" alt="diamond icon">
+            </span>
+            <span class="fw-md">OPTICAL</span>
+          </a>
+        </li>
+        <li class="tab__item tab__item--sunglasses l-inline-block py-3" data-tab="sunglasses">
+          <a href="#sunglasses" class="tab__link">
+            <span>
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-sun-black.svg" alt="sun icon">
+            </span>
+            <span class="fw-md">SUNGLASSES</span>
+          </a>
+        </li>
+        <li class="tab__item tab__item--functional l-inline-block py-3" data-tab="functional">
+          <a href="#" class="tab__link">
+            <span>
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-thunder-black.svg" alt="thunder icon">
+            </span>
+            <span class="fw-md">FUNCTIONAL</span>
+          </a>
+        </li>
+      </ul>
+      <div class="tab__content" data-tab-content="optical">
+        <ul class="banner__list l-flex l-flex-horizontal--between">
+          <li class="banner__item l-inline-block">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/banner-1.png" alt="optical banner 1">
+            </div>
+          </li>
+          <li class="banner__item l-inline-block">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/banner-2.png" alt="optical banner 2">
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="tab__content" data-tab-content="sunglasses" hidden>
+        <ul class="banner__list">
+          <li class="banner__item">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/banner-3.png" alt="sunglasses banner 1">
+            </div>
+          </li>
+          <li class="banner__item">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/product-2-color.png" alt="sunglasses banner 2">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <section id="optical" class="section productList">
+      <div class="container text-center">
+        <h2 class="section__title fw-md">Celluloid Combi</h2>
+        <h3 class="section__subTitle mb-5">賽璐珞鈦金屬混合鏡框</h3>
+        <ul class="product__list l-flex l-flex-wrap l-flex-horizontal--between">
+          <li class="product__item">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-1.png" alt="optical product 1">
+            </div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-7.jpg" alt="optical product 7">
+            </div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-8.jpg" alt="optical product 8">
+            </div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-10.jpg" alt="optical product 10">
+            </div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-9.jpg" alt="optical product 9">
+            </div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-12.jpg" alt="optical product 12">
+            </div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-1.png" alt="optical product 1">
+            </div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-7.jpg" alt="optical product 7">
+            </div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-8.jpg" alt="optical product 8">
+            </div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-10.jpg" alt="optical product 10">
+            </div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-9.jpg" alt="optical product 9">
+            </div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="product__item">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-12.jpg" alt="optical product 12">
+            </div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item pagination__previous">
+            <a href="#">上一頁</a>
+          </li>
+          <li class="pagination__item">
+            <a href="?page=1" class="pagination__link">1</a>
+          </li>
+          <li class="pagination__item pagination--active">
+            <a href="?page=2" class="pagination__link">2</a>
+          </li>
+          <li class="pagination__item">
+            <a href="?page=3" class="pagination__link">3</a>
+          </li>
+          <li class="pagination__item">
+            <a href="?page=4" class="pagination__link">4</a>
+          </li>
+          <li class="pagination__item">
+            <a href="?page=5" class="pagination__link">5</a>
+          </li>
+          <li class="pagination__item pagination__next">
+            <a href="#">下一頁</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="sunglasses" class="section productList mb-11">
+      <div class="container text-center">
+        <h2 class="section__title fw-md">2020 NEW COLLECTION</h2>
+        <h3 class="section__subTitle mb-5">賽璐珞鈦金屬混合鏡框</h3>
+        <ul class="product__list product__list">
+          <li>
+            <div>
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-4.png" alt="sunglasses product 4">
+            </div>
+            <div></div>
+            <div></div>
+          </li>
+          <li>
+            <div>
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-3.png" alt="sunglasses product 3">
+            </div>
+            <div></div>
+            <div></div>
+          </li>
+          <li>
+            <div>
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-2.png" alt="sunglasses product 2">
+            </div>
+            <div></div>
+            <div></div>
+          </li>
+          <li>
+            <div>
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-6.jpg" alt="sunglasses product 6">
+            </div>
+            <div></div>
+            <div></div>
+          </li>
+          <li>
+            <div>
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-11.jpg" alt="sunglasses product 11">
+            </div>
+            <div></div>
+            <div></div>
+          </li>
+          <li>
+            <div>
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-5.jpg" alt="sunglasses product 5">
+            </div>
+            <div></div>
+            <div></div>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <nav class="nav l-flex l-flex-wrap l-flex-horizontal--between l-flex-vertical--center">
+        <ul class="menu__list l-flex l-flex-horizontal--between">
+          <li class="menu__item"><a href="index.html" class="link menu__link">首頁</a></li>
+          <li class="menu__item"><a href="product.html#optical" class="link menu__link">系列鏡框</a></li>
+          <li class="menu__item"><a href="store.html" class="link menu__link">門市據點</a></li>
+          <li class="menu__item"><a href="blog.html" class="link menu__link">部落格</a></li>
+          <li class="menu__item"><a href="fqa.html" class="link menu__link">常見問題</a></li>
+        </ul>
+        <ul class="socialMedia__list l-flex l-flex-horizontal--between">
+          <li class="socialMedia__item px-2">
+            <a href="#" class="socialMedia__link">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg" alt="facebook icon">
+            </a>
+          </li>
+          <li class="socialMedia__item px-2">
+            <a href="#" class="socialMedia__link">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg" alt="instagram icon">
+            </a>
+          </li>
+          <li class="socialMedia__item pl-2">
+            <a href="#" class="socialMedia__link">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg" alt="line icon">
+            </a>
+          </li>
+        </ul>
+        <ul class="contactMethod__list">
+          <li class="contactMethod__tel contactMethod__item">
+            <!-- <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone.svg" alt="phone icon" class="icon"> -->
+            <a href="tel:+0800-000-000" class="contactMethod__link">0800-000-000</a>
+          </li>
+          <li class="contactMethod__mail contactMethod__item">
+            <!-- <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-mail.svg" alt="mail icon" class="icon"> -->
+            <a href="mailto:glasses@business.com" class="contactMethod__link">glasses@business.com</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright__wrapper l-flex l-flex-horizontal--between l-flex-vertical--center">
+        <div class="copyright">
+          <a href="index.html" class="logo__wrapper">
+            <img class="logo__img" src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo">
+          </a>
+          <p class="l-inline-block">Copyright © 2020 Glasses.All rights reserved.</p>
+        </div>
+        <ul class="legal__list">
+          <li class="legal__item"><a href="#" class="link legal__link">隱私權政策</a></li>
+          <li class="legal__item"><a href="#" class="link legal__link">服務條款</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
