@@ -31,17 +31,13 @@
 
 .banner__title {
   font-size: 64px;
-  line-height: 1.5;
+  /* line-height: 1.5; */
 }
 
 .banner__subTitle {
   font-size: 36px;
-  line-height: 54px;
+  line-height: 1.5;
 }
-
-/* .header .wrapper {
-  height: 100%;
-} */
 
 .about {
   background-color: var(--light-red-bg-color);
@@ -94,29 +90,12 @@
   padding: 0 30px;
 }
 
-/* .classic__category:nth-child(odd) h3 {
-  margin-left: 30px;
-}
-
-.classic__category:nth-child(even) h3 {
-  margin-right: 30px;
-} */
-
 .classic__item .image__wrapper {
-  width: 635px;
-  height: 320px;
-}
-
-.classic__item .image__wrapper img {
-  height: 100%;
-}
-
-.classic__icon {
-  display: inline-block;
+  width: 58.33%;
+  flex: 0 0 58.33%;
 }
 
 .crossover {
-  /* height: 743px; */
   background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/bg.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -134,13 +113,7 @@
 
 .crossover__item .image__wrapper {
   width: 100%;
-  /* width: 540px;
-  height: 472px; */
   position: relative;
-  /* top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; */
 }
 
 .crossover__item .image__wrapper::after {
@@ -229,11 +202,11 @@
 
 /*
   RWD
-  - 992 -> Tablet
-  - 767 -> Phone
+  - 992-768 -> Tablet
+  - 767-375 -> Phone
 */
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .container {
     max-width: 690px; /* 12x30+11x30 */
   }
@@ -302,7 +275,7 @@
   }
 
   .classic {
-    padding: 40px 39px;
+    padding: 40px 0;
   }
 
   .classic__item {
@@ -317,13 +290,12 @@
     flex-direction: row;
   }
 
-  .classic__item h3 {
+  .classic__category h3 {
     font-size: 28px;
   }
 
-  .classic__item .image__wrapper {
-    width: 390px;
-    height: 168px;
+  .classic__icon img {
+    width: 32px;
   }
 
   .crossover__title {
@@ -365,5 +337,95 @@
 
   .form__item[data-field="agreement"] {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 345px; /* 4x75+3x15 */
+  }
+
+  .section__title {
+    font-size: 24px;
+    line-height: 2;
+  }
+
+  .about .section__title,
+  .classic .section__title,
+  .crossover .section__title,
+  .recommend .section__title,
+  .contact .section__title {
+    margin-bottom: 20px;
+  }
+
+  .about,
+  .classic,
+  .crossover,
+  .recommend,
+  .contact {
+    padding: 32px 0;
+  }
+
+  .banner__title {
+    font-size: 32px;
+    /* line-height: 72px; */
+  }
+  
+  .banner__subTitle {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .about__item {
+    width: 100%;
+    padding: 0 54px; /* 69 - 15 */
+  }
+
+  .classic__item {
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+  }
+
+  .classic__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  .classic__item .image__wrapper {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .classic__category.mobile-only {
+    position: absolute;
+    display: flex;
+  }
+
+  .classic__category.mobile-only h3 {
+    font-size: 28px;
+    color: #FFFFFF;
+  }
+
+  .crossover__item {
+    width: 100%;
+    padding: 0;
+  }
+
+  .recommend__item {
+    width: 100%;
+    padding: 0;
+  }
+
+  .recommend__item img {
+    width: 100%;
+  }
+
+  .crossover__item:not(:last-child),
+  .recommend__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .contact .form__wrapper {
+    padding: 0;
   }
 }
