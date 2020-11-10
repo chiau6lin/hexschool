@@ -30,3 +30,32 @@
     padding: 16px 0 16px 60px;
   }
 }
+
+@media (max-width: 375px) {
+  .faq__page {
+    padding: 24px 0 56px;
+  }
+  
+  .section__title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .faq__item h4 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .faq__item p {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .faq__item p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .faq__item:not(:last-child) {
+    margin-bottom: 12px;
+  } 
+}
