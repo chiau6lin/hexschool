@@ -452,6 +452,7 @@ select {
 }
 
 
+/* page */
 .container {
   max-width: 1110px; /* 12x65+11x30 */
   width: 100%;
@@ -627,6 +628,33 @@ select {
   line-height: 1.5;
 }
 
+.banner {
+  /* height: var(--banner-height); */
+  background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/qa.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  color: #000000;
+  padding-top: 15.83%;
+  position: relative;
+}
+
+.banner .container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.banner__title {
+  font-size: 48px;
+  line-height: 80px;
+}
+
+.banner .image__wrapper {
+  width: 41px;
+}
+
 @media (max-width: 768px) {
   .container {
     max-width: 690px; /* 12x30+11x30 */
@@ -635,6 +663,12 @@ select {
   .header {
     padding-left: 39px;
     padding-right: 39px;
+  }
+
+  .banner {
+    padding-top: 40%;
+    background-size: cover;
+    background-position: 40% center;
   }
 
   .menu__item {
@@ -697,6 +731,20 @@ select {
 
   .container {
     max-width: 345px; /* 4x75+3x15 */
+  }
+
+  .banner {
+    padding-top: 40%;
+    background-size: cover;
+    background-position: 40% center;
+  }
+
+  .banner__title {
+    font-size: 28px;
+  }
+
+  .banner .image__wrapper {
+    width: 16px;
   }
 
   .header {
