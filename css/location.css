@@ -144,6 +144,22 @@
   padding: 20px 0;
 }
 
+/* detail */
+.location__detail .location__item {
+  max-width: 40%;
+  flex: 1 1 40%;
+  margin-bottom: 0;
+}
+
+.location__detail .location__map {
+  max-width: 60%;
+  flex: 1 1 60%;
+}
+
+.location__detail .location__item > .image__wrapper {
+  padding-top: 50%;
+}
+
 @media (max-width: 768px) {
   .banner {
     padding-top: 40%;
