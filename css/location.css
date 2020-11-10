@@ -6,6 +6,14 @@
   background-position: center;
   color: #000000;
   padding-top: 15.83%;
+  position: relative;
+}
+
+.banner .container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .banner .banner__title {
@@ -29,7 +37,6 @@
 .location__select label {
   font-size: 24px;
   line-height: 1.25;
-  margin-right: 20px;
   display: block;
   width: 100%;
 }
@@ -39,7 +46,8 @@
   line-height: 24px;
   border: 1px solid #CED4DA;
   padding: 10px 19px;
-  width: 75%;
+  width: 70%;
+  margin-left: 20px;
 }
 
 .location__select label::after,
@@ -134,4 +142,46 @@
   color: #FFFFFF;
   background-color: #000000;
   padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding-top: 40%;
+    background-size: cover;
+    background-position: 40% center;
+  }
+
+  .location__page {
+    padding: 8px 0 104px;
+  }
+
+  .location__select {
+    max-width: 50%;
+    margin-bottom: 24px;
+  }
+
+  .location__select label {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .location__item h3 {
+    font-size: 16px;
+  }
+
+  .location__item {
+    /* max-width: calc(33.33% - 15px); */
+    max-width: 50%;
+    flex: 0 1 50%;
+    padding: 0 15px;
+  }
+
+  .location__info {
+    font-size: 14px;
+  }
+
+  .location__item a.btn {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
