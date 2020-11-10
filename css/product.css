@@ -53,6 +53,10 @@
   background-color: var(--tab-active-border-color);
 }
 
+.tab__content {
+  display: none;
+}
+
 .banner__item {
   /* width: 50%; */
   width: calc(50% - 15px);
@@ -63,6 +67,10 @@
 
 .banner__item .image__wrapper {
   width: 100%;
+}
+
+.banner__item .image__wrapper img {
+  height: 309px;
 }
 
 .section__title {
@@ -164,7 +172,7 @@
   }
 
   .banner__item .image__wrapper img {
-    height: fit-content;
+    height: 309px;
   }
 
   .productList {

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RWD | Week 3</title>
+  <title>Product RWD | Week 3</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -17,7 +17,7 @@
     <nav class="nav__menu">
       <ul class="menu__list l-flex l-flex-horizontal--between">
         <li class="menu__item"><a href="product.html#optical" class="link menu__link">系列鏡框</a></li>
-        <li class="menu__item"><a href="store.html" class="link menu__link">門市據點</a></li>
+        <li class="menu__item"><a href="location.html" class="link menu__link">門市據點</a></li>
         <li class="menu__item"><a href="blog.html" class="link menu__link">部落格</a></li>
         <li class="menu__item"><a href="faq.html" class="link menu__link">常見問題</a></li>
       </ul>
@@ -25,8 +25,9 @@
   </header>
 
   <main class="main product__page">
-    <div class="tabs text-center">
+    <div id="tabs" class="tabs text-center">
       <ul class="tab__list l-flex l-flex-horizontal--center">
+        <!-- tab--active -->
         <li class="tab__item tab__item--optical l-inline-block py-3" data-tab="optical">
           <a href="#optical" class="tab__link">
             <span class="image__wrapper l-inline-block">
@@ -39,7 +40,7 @@
             <span class="fw-md">OPTICAL</span>
           </a>
         </li>
-        <li class="tab__item tab__item--sunglasses l-inline-block py-3 tab--active" data-tab="sunglasses">
+        <li class="tab__item tab__item--sunglasses l-inline-block py-3" data-tab="sunglasses">
           <a href="#sunglasses" class="tab__link">
             <span class="image__wrapper l-inline-block">
               <img
@@ -78,14 +79,14 @@
           </li>
         </ul>
       </div>
-      <div class="tab__content" data-tab-content="sunglasses" hidden>
-        <ul class="banner__list">
-          <li class="banner__item">
+      <div class="tab__content" data-tab-content="sunglasses">
+        <ul class="banner__list l-flex l-flex-horizontal--between">
+          <li class="banner__item l-inline-block">
             <div class="image__wrapper">
               <img src="https://hexschool.github.io/webLayoutTraining1st/week3/banner-3.png" alt="sunglasses banner 1">
             </div>
           </li>
-          <li class="banner__item">
+          <li class="banner__item l-inline-block">
             <div class="image__wrapper">
               <img src="https://hexschool.github.io/webLayoutTraining1st/week3/product-2-color.png" alt="sunglasses banner 2">
             </div>
@@ -284,52 +285,88 @@
       </div>
     </section>
 
-    <section id="sunglasses" class="section productList mb-11">
+    <section id="sunglasses" class="section productList">
       <div class="container text-center">
         <h2 class="section__title fw-md">2020 NEW COLLECTION</h2>
         <h3 class="section__subTitle mb-5">賽璐珞鈦金屬混合鏡框</h3>
-        <ul class="product__list product__list">
-          <li>
-            <div>
+        <ul class="product__list product__list l-flex l-flex-wrap l-flex-horizontal--between">
+          <li class="product__item">
+            <div class="image__wrapper">
               <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-4.png" alt="sunglasses product 4">
             </div>
-            <div></div>
-            <div></div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <div>
+          <li class="product__item">
+            <div class="image__wrapper">
               <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-3.png" alt="sunglasses product 3">
             </div>
-            <div></div>
-            <div></div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <div>
+          <li class="product__item">
+            <div class="image__wrapper">
               <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-2.png" alt="sunglasses product 2">
             </div>
-            <div></div>
-            <div></div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <div>
+          <li class="product__item">
+            <div class="image__wrapper">
               <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-6.jpg" alt="sunglasses product 6">
             </div>
-            <div></div>
-            <div></div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <div>
+          <li class="product__item">
+            <div class="image__wrapper">
               <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-11.jpg" alt="sunglasses product 11">
             </div>
-            <div></div>
-            <div></div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <div>
+          <li class="product__item">
+            <div class="image__wrapper">
               <img src="https://hexschool.github.io/webLayoutTraining1st/week3/products-5.jpg" alt="sunglasses product 5">
             </div>
-            <div></div>
-            <div></div>
+            <div class="product__detail l-flex l-flex-wrap l-flex-horizontal--between text-upper">
+              <span class="product__model">bj41600s</span>
+              <span class="product__price">ntd3,490</span>
+              <ul class="product__colors">
+                <li class="product__color product__color--darkBrown l-inline-block mr-1"></li>
+                <li class="product__color product__color--lightBrown l-inline-block"></li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
@@ -343,7 +380,7 @@
         <ul class="menu__list l-flex l-flex-horizontal--between">
           <li class="menu__item"><a href="index.html" class="link menu__link">首頁</a></li>
           <li class="menu__item"><a href="product.html#optical" class="link menu__link">系列鏡框</a></li>
-          <li class="menu__item"><a href="store.html" class="link menu__link">門市據點</a></li>
+          <li class="menu__item"><a href="location.html" class="link menu__link">門市據點</a></li>
           <li class="menu__item"><a href="blog.html" class="link menu__link">部落格</a></li>
           <li class="menu__item"><a href="fqa.html" class="link menu__link">常見問題</a></li>
         </ul>
@@ -389,5 +426,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
