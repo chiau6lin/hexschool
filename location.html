@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location RWD | Week 3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/location.css">
+</head>
+<body>
+  <header class="header fw-reg l-flex l-flex-horizontal--between l-flex-vertical--center">
+    <a href="index.html" class="logo__wrapper">
+      <img class="logo__img "src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo">
+    </a>
+    <nav class="nav__menu">
+      <ul class="menu__list l-flex l-flex-horizontal--between">
+        <li class="menu__item"><a href="product.html" class="link menu__link">系列鏡框</a></li>
+        <li class="menu__item"><a href="location.html" class="link menu__link">門市據點</a></li>
+        <li class="menu__item"><a href="blog.html" class="link menu__link">部落格</a></li>
+        <li class="menu__item"><a href="faq.html" class="link menu__link">常見問題</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="banner l-flex l-flex-vertical--center">
+    <div class="container">
+      <h1 class="banner__title fw-bd">
+        門市據點
+        <span class="image__wrapper l-inline-block">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-location.svg" alt="location icon">
+        </span>
+      </h1>
+    </div>
+  </div>
+
+  <main class="main location__page">
+    <section class="section location l-flex l-flex-vertical--center">
+      <div class="container">
+        <div class="location__select mb-4">
+          <label for="location">選擇地區
+            <!-- onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);" -->
+            <select name="location" id="location" onchange="this.value && (location='location-detail.html?l=' + this.value);">
+              <option value="">台北市</option>
+              <option value="台北中山旗艦店">台北中山旗艦店</option>
+            </select>
+          </label>
+        </div>
+        <ul class="location__list l-flex l-flex-wrap">
+          <li class="location__item card">
+            <div class="image__wrapper">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/locate1.jpeg" alt="location 1">
+            </div>
+            <div class="card__body">
+              <h3>台北中山旗艦店</h3>
+              <address class="location__info pt-2">
+                <ul>
+                  <li>
+                    <span class="image__wrapper">
+                      <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone-black.svg" alt="phone icon">
+                    </span>
+                    <span>電話：<a href="tel:+(02)000-1234">(02)000-1234</a></span>
+                  </li>
+                  <li>
+                    <span class="image__wrapper">
+                      <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-clock-black.svg" alt="clock icon">
+                    </span>
+                    <span>營業時間：10:00-21:00</span>
+                  </li>
+                  <li class="location__address l-flex">
+                    <span class="image__wrapper">
+                      <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-map.svg" alt="map icon">
+                    </span>
+                    <span>地址：<a href="https://goo.gl/maps/2VR4YwSmjnR1W1Ks9">台北市中山區南京東路25巷2-1號</a></span>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <a href="location-detail.html?l='台北中山旗艦店'" class="btn l-block text-center">詳細資訊</a>
+          </li>
+          <li class="location__item card">
+            <div class="image__wrapper"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/locate2.jpg" alt="locate 2"></div>
+            <div class="card__body">
+              <h3>台北中山旗艦店</h3>
+              <address class="location__info pt-2">
+                <ul>
+                  <li>
+                    <span class="image__wrapper">
+                      <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone-black.svg" alt="phone icon">
+                    </span>
+                    <span>電話：<a href="tel:+(02)000-1234">(02)000-1234</a></span>
+                  </li>
+                  <li>
+                    <span class="image__wrapper">
+                      <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-clock-black.svg" alt="clock icon">
+                    </span>
+                    <span>營業時間：10:00-21:00</span>
+                  </li>
+                  <li class="location__address l-flex">
+                    <span class="image__wrapper">
+                      <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-map.svg" alt="map icon">
+                    </span>
+                    <span>地址：<a href="https://goo.gl/maps/2VR4YwSmjnR1W1Ks9">台北市中山區南京東路25巷2-1號</a></span>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <a href="location-detail.html?l='台北中山旗艦店'" class="btn l-block text-center">詳細資訊</a>
+          </li>
+          <li class="location__item card">
+            <div class="image__wrapper"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/locate3.jpg" alt="locate 3"></div>
+            <div class="card__body">
+              <h3>台北中山旗艦店</h3>
+              <address class="location__info pt-2">
+                <ul>
+                  <li>
+                    <span class="image__wrapper">
+                      <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone-black.svg" alt="phone icon">
+                    </span>
+                    <span>電話：<a href="tel:+(02)000-1234">(02)000-1234</a></span>
+                  </li>
+                  <li>
+                    <span class="image__wrapper">
+                      <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-clock-black.svg" alt="clock icon">
+                    </span>
+                    <span>營業時間：10:00-21:00</span>
+                  </li>
+                  <li class="location__address l-flex">
+                    <span class="image__wrapper">
+                      <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-map.svg" alt="map icon">
+                    </span>
+                    <span>地址：<a href="https://goo.gl/maps/2VR4YwSmjnR1W1Ks9">台北市中山區南京東路25巷2-1號</a></span>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <a href="location-detail.html?l='台北中山旗艦店'" class="btn l-block text-center">詳細資訊</a>
+          </li>
+          <li class="location__item card">
+            <div class="image__wrapper"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/locate4.jpg" alt="locate 4"></div>
+            <div class="card__body">
+              <h3>台北中山旗艦店</h3>
+              <address class="location__info pt-2">
+                <ul>
+                  <li>
+                    <span class="image__wrapper">
+                      <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone-black.svg" alt="phone icon">
+                    </span>
+                    <span>電話：<a href="tel:+(02)000-1234">(02)000-1234</a></span>
+                  </li>
+                  <li>
+                    <span class="image__wrapper">
+                      <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-clock-black.svg" alt="clock icon">
+                    </span>
+                    <span>營業時間：10:00-21:00</span>
+                  </li>
+                  <li class="location__address l-flex">
+                    <span class="image__wrapper">
+                      <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-map.svg" alt="map icon">
+                    </span>
+                    <span>地址：<a href="https://goo.gl/maps/2VR4YwSmjnR1W1Ks9">台北市中山區南京東路25巷2-1號</a></span>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <a href="location-detail.html?l='台北中山旗艦店'" class="btn l-block text-center">詳細資訊</a>
+          </li>
+          <li class="location__item card">
+            <div class="image__wrapper"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/locate5.jpg" alt="locate 5"></div>
+            <div class="card__body">
+              <h3>台北中山旗艦店</h3>
+              <address class="location__info pt-2">
+                <ul>
+                  <li>
+                    <span class="image__wrapper">
+                      <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone-black.svg" alt="phone icon">
+                    </span>
+                    <span>電話：<a href="tel:+(02)000-1234">(02)000-1234</a></span>
+                  </li>
+                  <li>
+                    <span class="image__wrapper">
+                      <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-clock-black.svg" alt="clock icon">
+                    </span>
+                    <span>營業時間：10:00-21:00</span>
+                  </li>
+                  <li class="location__address l-flex">
+                    <span class="image__wrapper">
+                      <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-map.svg" alt="map icon">
+                    </span>
+                    <span>地址：<a href="https://goo.gl/maps/2VR4YwSmjnR1W1Ks9">台北市中山區南京東路25巷2-1號</a></span>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <a href="location-detail.html?l='台北中山旗艦店'" class="btn l-block text-center">詳細資訊</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <nav class="nav l-flex l-flex-wrap l-flex-horizontal--between l-flex-vertical--center">
+        <ul class="menu__list l-flex l-flex-horizontal--between">
+          <li class="menu__item"><a href="index.html" class="link menu__link">首頁</a></li>
+          <li class="menu__item"><a href="product.html#optical" class="link menu__link">系列鏡框</a></li>
+          <li class="menu__item"><a href="location.html" class="link menu__link">門市據點</a></li>
+          <li class="menu__item"><a href="blog.html" class="link menu__link">部落格</a></li>
+          <li class="menu__item"><a href="fqa.html" class="link menu__link">常見問題</a></li>
+        </ul>
+        <ul class="socialMedia__list l-flex l-flex-horizontal--between">
+          <li class="socialMedia__item px-2">
+            <a href="#" class="socialMedia__link">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg" alt="facebook icon">
+            </a>
+          </li>
+          <li class="socialMedia__item px-2">
+            <a href="#" class="socialMedia__link">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg" alt="instagram icon">
+            </a>
+          </li>
+          <li class="socialMedia__item pl-2">
+            <a href="#" class="socialMedia__link">
+              <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg" alt="line icon">
+            </a>
+          </li>
+        </ul>
+        <ul class="contactMethod__list">
+          <li class="contactMethod__tel contactMethod__item">
+            <!-- <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone.svg" alt="phone icon" class="icon"> -->
+            <a href="tel:+0800-000-000" class="contactMethod__link">0800-000-000</a>
+          </li>
+          <li class="contactMethod__mail contactMethod__item">
+            <!-- <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-mail.svg" alt="mail icon" class="icon"> -->
+            <a href="mailto:glasses@business.com" class="contactMethod__link">glasses@business.com</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright__wrapper l-flex l-flex-horizontal--between l-flex-vertical--center">
+        <div class="copyright">
+          <a href="index.html" class="logo__wrapper">
+            <img class="logo__img" src="https://hexschool.github.io/webLayoutTraining1st/week3/logo.png" alt="logo">
+          </a>
+          <p class="l-inline-block">Copyright © 2020 Glasses.All rights reserved.</p>
+        </div>
+        <ul class="legal__list">
+          <li class="legal__item"><a href="#" class="link legal__link">隱私權政策</a></li>
+          <li class="legal__item"><a href="#" class="link legal__link">服務條款</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

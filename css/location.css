@@ -1,0 +1,137 @@
+.banner {
+  /* height: var(--banner-height); */
+  background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/qa.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  color: #000000;
+  padding-top: 15.83%;
+}
+
+.banner .banner__title {
+  font-size: 48px;
+  line-height: 80px;
+}
+
+.banner .image__wrapper {
+  width: 41px;
+}
+
+.location__page {
+  padding: 22px 0 304px;
+}
+
+.location__select {
+  max-width: 40%;
+  position: relative;
+}
+
+.location__select label {
+  font-size: 24px;
+  line-height: 1.25;
+  margin-right: 20px;
+  display: block;
+  width: 100%;
+}
+
+.location__select select {
+  font-size: 18px;
+  line-height: 24px;
+  border: 1px solid #CED4DA;
+  padding: 10px 19px;
+  width: 75%;
+}
+
+.location__select label::after,
+.location__select label::before {
+  content: '';
+  width: 0;
+  height: 5px;
+  border-width: 7px;
+  border-style: solid;
+  display: inline-block;
+  pointer-events:none; /* let the click pass trough */
+}
+
+.location__select label::before {
+  position: absolute;
+  right: 20px;
+  top: 6px;
+  border-color: transparent transparent #373A3C transparent;
+}
+
+.location__select label::after {
+  position: absolute;
+  right: 20px;
+  top: 24px;
+  border-color: #373A3C transparent transparent transparent;
+}
+
+.location__item {
+  /* max-width: calc(33.33% - 15px); */
+  max-width: 33.33%;
+  flex: 0 1 33.33%;
+  padding: 0 15px;
+}
+
+.location__item:nth-child(-n+3) {
+  margin-bottom: 32px;
+}
+
+.location__item h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  border-bottom: 1px solid #00000020;
+  padding-bottom: 12px;
+}
+
+.location__item > .image__wrapper {
+  position: relative;
+  padding-top: 66.75%; /* in order to arrange image height, because each image ratio is different */
+}
+
+.location__item > .image__wrapper img {
+  position: absolute;
+  top: 0;
+}
+
+.location__item .card__body {
+  color: #212529;
+  padding: 12px 28px 16px 24px;
+}
+
+.location__info {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.location__info li {
+  margin-bottom: 8px;
+}
+
+.location__info .image__wrapper {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin-right: 12px;
+}
+
+.location__info .image__wrapper img {
+  display: block;
+}
+
+.location__address .image__wrapper {
+  flex-shrink: 0;
+}
+
+.location__address a {
+  display: inline;
+}
+
+.location__item a.btn {
+  font-size: 19px;
+  line-height: 26px;
+  color: #FFFFFF;
+  background-color: #000000;
+  padding: 20px 0;
+}

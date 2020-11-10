@@ -62,6 +62,18 @@ textarea {
   resize: none;
 }
 
+select {
+  -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-family: inherit;
+	font-size: inherit;
+	padding: 0;
+  border-width: 0;
+  /* width: 100%; */
+	/* display: none; */
+}
+
 /*
   Base
 */
@@ -231,6 +243,10 @@ textarea {
 
 .py-2 {
   padding: 16px 0;
+}
+
+.pt-2 {
+  padding-top: 16px;
 }
 
 .pl-2 {
