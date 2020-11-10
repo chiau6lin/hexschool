@@ -200,6 +200,35 @@
     font-size: 14px;
     line-height: 1.5;
   }
+
+  /* detail */
+  /* .location__detail > .location__item {
+    max-width: calc(100% - 30px);
+    flex: 1 0 100%;
+  } */
+
+  .location__detail > .location__item,
+  .location__detail > .location__map {
+    max-width: 100%;
+    flex: 1 0 100%;
+  }
+
+  .location__detail .location__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+
+  .location__detail .location__item > .image__wrapper {
+    padding-top: 25%;
+  }
+
+  .location__detail .location__item > * {
+    max-width: calc(50% - 15px);
+    flex: 1 1 50%;
+  }
 }
 
 @media (max-width: 375px) {
