@@ -289,4 +289,20 @@
     font-size: 14px;
     line-height: 1.5;
   }
+
+  .location__detail .location__item {
+    display: block;
+    padding: 0;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .location__detail .location__item > * {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .location__detail .location__item > .image__wrapper {
+    padding-top: 50%;
+  }
 }
