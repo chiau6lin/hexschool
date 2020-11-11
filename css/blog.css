@@ -89,12 +89,14 @@
 .article__description {
   font-size: 20px;
   line-height: 1.5;
+  color: #555555;
   margin-bottom: 19px;
 }
 
 .article__date {
   font-size: 16px;
   line-height: 1.5;
+  color: #555555;
 }
 
 .article .more__link {
@@ -102,4 +104,82 @@
   font-size: 36px;
   line-height: 1.5;
   color: var(--secondary-theme-color);
+}
+
+
+@media (max-width: 768px) {
+  .subHeader .menu__item {
+    margin-right: 32px;
+  }
+
+  .subHeader .menu__link {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .blog__page {
+    padding: 40px 0 104px;
+  }
+
+  .blog__list {
+    margin-bottom: 104px
+  }
+
+  .blog__item {
+    margin-bottom: 32px
+  }
+
+  .article .article__image,
+  .article .article__content {
+    max-width: calc(50% - 15px);
+    flex: 0 0 50%;
+  }
+
+  .article__top {
+    margin-bottom: 16px;
+  }
+
+  .article__top h2 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .article__eng {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .article__date {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .article__description {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  /* .article .more__link {
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700; 
+    color: #555555;
+    text-transform: lowercase;
+  } */
+
+
+  .article__description .more__link {
+    display: inline;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700; 
+    color: inherit;
+  }
+
+  .article__content > .more__link {
+    display: none;
+  }
+
 }
