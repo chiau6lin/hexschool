@@ -25,6 +25,7 @@
   --card-border-color: #DEE2E6;
   --light-red-bg-color: #AA06010D;
   --tab-active-border-color: var(--main-theme-color);
+  --pagination-hover-bg-color: #F2F2F2;
 }
 
 /* 全域 border box */
@@ -113,9 +114,10 @@ select {
   transition: all .3s linear;
 }
 
-.link::after {
+.link.link--active::after {
   content: '';
-  width: 0;
+  width: 100%;
+  /* width: 0; */
   height: 3px;
   background: #FFFFFF;
   position: relative;
@@ -124,8 +126,8 @@ select {
   transition: all .3s linear;
 }
 
-.link:hover::after {
-  width: 100%;
+.link:hover {
+  background-color: var(--secondary-theme-color);
 }
 
 .image__wrapper img {
@@ -138,8 +140,10 @@ select {
   - prefix `.o` means base objects styles blocks
 */
 
-.card {
-  /* border: 1px solid var(--card-border-color); */
+.card {}
+
+.card--horizontal {
+  display: flex;
 }
 
 .card__body {
@@ -155,9 +159,22 @@ select {
   line-height: 1.5;
 }
 
+input[type="search"].has-icon {
+  color: inherit;
+  height: 24px;
+  background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/icon-search.svg');
+  background-position: 100% center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
 .form__item input[type="radio"],
 .form__item input[type="checkbox"] {
   width: auto;
+}
+
+.pagination a:hover {
+  background-color: var(--pagination-hover-bg-color);
 }
 
 @media (max-width: 768px) {
@@ -316,6 +333,10 @@ select {
 
 .mb-5 {
   margin-bottom: 40px;
+}
+
+.mr-6 {
+  margin-right: 48px;
 }
 
 .mb-6 {
@@ -727,6 +748,12 @@ select {
 @media (max-width: 375px) {
   .desktop-only {
     display: none;
+  }
+
+  .pagination__item a {
+    font-size: 11px;
+    line-height: 1.5;
+    padding: 8px 9px;
   }
 
   .container {

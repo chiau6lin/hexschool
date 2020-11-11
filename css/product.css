@@ -267,10 +267,4 @@
   .product__color:not(:last-child) {
     margin-right: 4px;
   }
-
-  .productList .pagination__item a {
-    font-size: 11px;
-    line-height: 1.5;
-    padding: 8px 9px;
-  }
 }
