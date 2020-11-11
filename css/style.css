@@ -150,6 +150,10 @@ select {
   border: 1px solid var(--card-border-color);
 }
 
+.card__body--clear {
+  border: none;
+}
+
 .form__item input,
 .form__item textarea {
   width: 100%;
