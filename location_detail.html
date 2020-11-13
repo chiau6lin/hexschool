@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RWD | Week 3</title>
+  <title>Location Detail RWD | Week 3</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -17,7 +17,7 @@
     <nav class="nav__menu">
       <ul class="menu__list l-flex l-flex-horizontal--between">
         <li class="menu__item"><a href="product.html" class="link menu__link">系列鏡框</a></li>
-        <li class="menu__item"><a href="location.html" class="link menu__link">門市據點</a></li>
+        <li class="menu__item"><a href="location.html" class="link link--active menu__link">門市據點</a></li>
         <li class="menu__item"><a href="blog.html" class="link menu__link">部落格</a></li>
         <li class="menu__item"><a href="faq.html" class="link menu__link">常見問題</a></li>
       </ul>
@@ -41,7 +41,7 @@
         <div class="location__select mb-4">
           <label for="location">選擇地區
             <!-- onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);" -->
-            <select name="location" id="location" onchange="this.value && (location='location-detail.html?l=' + this.value);">
+            <select name="location" id="location" onchange="this.value && (location='location_detail.html?l=' + this.value);">
               <option value="">台北市</option>
               <option value="台北中山旗艦店">台北中山旗艦店</option>
             </select>
