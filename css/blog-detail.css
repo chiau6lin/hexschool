@@ -38,10 +38,10 @@
   max-width: 100%;
 }
 
-.blog__detail {
+.blog__detail .tags {
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
-  line-height:1.5;
+  line-height: 1.5;
 }
 
 .blog__sidebar .tag .section__title {
@@ -60,20 +60,22 @@
 }
 
 .blog__navigation a {
-  content: '';
+  /* font-size: 19px;
+  line-height: 26px; */
   background-repeat: no-repeat;
   background-position-y: center;
+  background-size: contain;
 }
 
 .blog__navigation--pre {
   background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/icon-undo.svg');
-  padding-left: 34px;
+  padding-left: 26px;
 }
 
 .blog__navigation--next {
   background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/icon-redo.svg');
   background-position-x: right;
-  padding-right: 34px;
+  padding-right: 26px;
 }
 
 .blog__navigation--pre:hover {
@@ -86,4 +88,51 @@
 
 .blog__share .text {
   margin-right: 3px;
+}
+
+@media (max-width: 768px) {
+  .blog-detail__page {
+    padding: 8px 0 104px;
+  }
+  
+  .blog__detail {
+    padding-top: 8px;
+  }
+  
+  .article h1 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  
+  .article__eng {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  
+  .article__date {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .blog__detail .article__description {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 16px 0 24px;
+  }
+  
+  .blog__operation {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .blog__sidebar .tag .section__title {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 6px;
+  }
+  
+  .blog__detail .tags {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
