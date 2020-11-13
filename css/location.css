@@ -1,5 +1,13 @@
-.location__page {
+.section.location {
   padding: 22px 0 304px;
+}
+
+.banner {
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/qa.png);
+}
+
+.banner .container {
+  bottom: 0;
 }
 
 .location__select {
@@ -134,7 +142,7 @@
 }
 
 @media (max-width: 768px) {
-  .location__page {
+  .section.location {
     padding: 8px 0 104px;
   }
 
@@ -199,7 +207,7 @@
 }
 
 @media (max-width: 375px) {
-  .location__page {
+  .section.location {
     padding: 8px 0 56px;
   }
 

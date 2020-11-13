@@ -15,12 +15,15 @@
   Page
 */
 .banner {
-  height: var(--banner-height);
+  /* height: var(--banner-height); */
   background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/banner.png');
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   color: var(--secondary-theme-color);
+  padding-top: 43.75%;
+}
+
+.banner  .container {
+  top: 30%;
 }
 
 .banner__title {

@@ -688,7 +688,7 @@ input[type="search"].has-icon {
 
 .banner {
   /* height: var(--banner-height); */
-  background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/qa.png');
+  /* background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/qa.png'); */
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -699,14 +699,14 @@ input[type="search"].has-icon {
 
 .banner .container {
   position: absolute;
-  bottom: 0;
+  /* bottom: 0; */
   left: 0;
   right: 0;
 }
 
 .banner__title {
   font-size: 48px;
-  line-height: 80px;
+  /* line-height: 80px; */
 }
 
 .banner .image__wrapper {
