@@ -209,7 +209,7 @@ input[type="search"].has-icon {
   display: inline
 }
 
-.tags li::before {
+.tags li a::before {
   content: '#';
 }
 
