@@ -23,8 +23,7 @@
   line-height: 1.5;
 }
 
-.article.blog__article,
-.blog__operation {
+.article.blog__article {
   max-width: calc(75% - 15px);
   flex: 0 0 75%;
 }
@@ -55,11 +54,11 @@
   padding: 24px 0 36px;
 }
 
-.blog__navigation {
+.article__navigation {
   border-top: 1px solid #707070;
 }
 
-.blog__navigation a {
+.article__navigation a {
   /* font-size: 19px;
   line-height: 26px; */
   background-repeat: no-repeat;
@@ -67,41 +66,46 @@
   background-size: contain;
 }
 
-.blog__navigation--pre {
+.article__navigation--pre {
   background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/icon-undo.svg');
   padding-left: 26px;
 }
 
-.blog__navigation--next {
+.article__navigation--next {
   background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/icon-redo.svg');
   background-position-x: right;
   padding-right: 26px;
 }
 
-.blog__navigation--pre:hover {
+.article__navigation--pre:hover {
   background-position-x: 2%;
 }
 
-.blog__navigation--next:hover {
+.article__navigation--next:hover {
   background-position-x: 98%;
 }
 
-.blog__share .text {
+.article__share .text {
   margin-right: 3px;
 }
 
 @media (max-width: 768px) {
   .blog-detail__page {
-    padding: 8px 0 104px;
+    padding: 8px 0 180px;
   }
   
   .blog__detail {
+    position: relative;
     padding-top: 8px;
   }
   
   .article h1 {
     font-size: 32px;
     line-height: 45px;
+  }
+
+  .article__subject {
+    margin-bottom: 16px;
   }
   
   .article__eng {
@@ -134,5 +138,18 @@
   .blog__detail .tags {
     font-size: 16px;
     line-height: 21px;
+  }
+
+  .article__share {
+    padding-bottom: 16px;
+  }
+
+  .article__navigation {
+    padding-top: 16px;
+  }
+
+  .article__operation {
+    position: absolute;
+    width: 100%;
   }
 }
