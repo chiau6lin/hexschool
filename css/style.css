@@ -140,6 +140,7 @@ select {
   - prefix `.o` means base objects styles blocks
 */
 
+/* card */
 .card {}
 
 .card--horizontal {
@@ -154,6 +155,7 @@ select {
   border: none;
 }
 
+/* form */
 .form__item input,
 .form__item textarea {
   width: 100%;
@@ -161,6 +163,11 @@ select {
   border: 1px solid #000000;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.form__item input[type="radio"],
+.form__item input[type="checkbox"] {
+  width: auto;
 }
 
 input[type="search"].has-icon {
@@ -172,13 +179,38 @@ input[type="search"].has-icon {
   cursor: pointer;
 }
 
-.form__item input[type="radio"],
-.form__item input[type="checkbox"] {
-  width: auto;
-}
-
+/* pagination */
 .pagination a:hover {
   background-color: var(--pagination-hover-bg-color);
+}
+
+/* breadcrumb */
+.breadcrumb li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.breadcrumb li+li::before {
+  content: '/\00a0';
+  color: #000000;
+}
+
+.breadcrumb li:last-child {
+  color: var(--main-theme-color);
+}
+
+/* tag */
+.tags {
+  color: var(--main-theme-color);
+}
+
+.tags li {
+  display: inline
+}
+
+.tags li::before {
+  content: '#';
 }
 
 @media (max-width: 768px) {
@@ -270,6 +302,10 @@ input[type="search"].has-icon {
   padding-top: 16px;
 }
 
+.pb-2 {
+  padding-bottom: 16px;
+}
+
 .pl-2 {
   padding-left: 16px;
 }
@@ -290,12 +326,20 @@ input[type="search"].has-icon {
   padding-left: 24px;
 }
 
+.pt-3 {
+  padding-top: 32px;
+}
+
 .pl-4 {
   padding-left: 32px;
 }
 
 .pb-4 {
   padding-bottom: 32px;
+}
+
+.pt-4 {
+  padding-top: 32px;
 }
 
 .pt-8 {
@@ -315,6 +359,18 @@ input[type="search"].has-icon {
   margin-right: 8px;
 }
 
+.mx-1 {
+  margin: 0 8px;
+}
+
+.mr-2 {
+  margin-right: 16px;
+}
+
+.mx-2 {
+  margin: 0 16px;
+}
+
 .ml-2 {
   margin-left: 16px;
 }
@@ -329,6 +385,10 @@ input[type="search"].has-icon {
 
 .mb-3 {
   margin-bottom: 24px;
+}
+
+.mr-3 {
+  margin-right: 24px;
 }
 
 .mb-4 {
@@ -375,6 +435,10 @@ input[type="search"].has-icon {
 
 .l-inline-block {
   display: inline-block;
+}
+
+.l-inline {
+  display: inline;
 }
 
 /* FlexBox */

@@ -1,0 +1,89 @@
+/* detail */
+.blog-detail__page {
+  padding: 8px 0 304px;
+}
+
+.blog__detail {
+  padding-top: 17px;
+}
+
+.article h1 {
+  font-size: 48px;
+  line-height: 67px;
+  margin-bottom: 5px;
+}
+
+.article__eng {
+  font-size: 28px;
+  line-height: 37px;
+}
+
+.article__date {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.article.blog__article,
+.blog__operation {
+  max-width: calc(75% - 15px);
+  flex: 0 0 75%;
+}
+
+.sidebar.blog__sidebar {
+  max-width: calc(25% - 15px);
+  flex: 0 0 25%;
+}
+
+.blog__detail .image__wrapper {
+  max-width: 100%;
+}
+
+.blog__detail {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height:1.5;
+}
+
+.blog__sidebar .tag .section__title {
+  font-size: 28px;
+  line-height: 1.5;
+  color: var(--main-theme-color);
+  margin-bottom: 11px;
+}
+
+.blog__detail .article__description {
+  padding: 24px 0 36px;
+}
+
+.blog__navigation {
+  border-top: 1px solid #707070;
+}
+
+.blog__navigation a {
+  content: '';
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.blog__navigation--pre {
+  background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/icon-undo.svg');
+  padding-left: 34px;
+}
+
+.blog__navigation--next {
+  background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/icon-redo.svg');
+  background-position-x: right;
+  padding-right: 34px;
+}
+
+.blog__navigation--pre:hover {
+  background-position-x: 2%;
+}
+
+.blog__navigation--next:hover {
+  background-position-x: 98%;
+}
+
+.blog__share .text {
+  margin-right: 3px;
+}
